@@ -68,6 +68,11 @@ func main() {
 		 return
 		 }
 
+		if(xoboard[0][0]!="" && xoboard[1][1] !=""&& xoboard[2][2]  !="" && xoboard[0][2] !="" && xoboard[2][0]  !=""&& xoboard[2][1] !=""&& xoboard[0][1] !=""&&xoboard[1][2] !=""&&xoboard[1][0] !=""){
+			fmt.Println("Game draw , none is winner :(")
+			return
+		}
+
 		if(player=="x"){
 			player="o"
 		}else{
